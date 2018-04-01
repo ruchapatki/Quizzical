@@ -34,7 +34,9 @@ class ScoreVC: UIViewController {
     }
     
     @IBAction func startingOver(_ sender: Any) {
-        needsReset = true;
+        question = []
+        correct = []
+        answers = []
     }
     
     

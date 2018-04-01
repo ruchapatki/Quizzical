@@ -9,13 +9,13 @@
 import UIKit
 import Firebase
 
-var needsReset = false;
 
 class PhotoVC: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var quizButton: UIButton!
     @IBOutlet weak var selectImgBtn: UIButton!
+    
     
     var myImg: UIImage!
     
@@ -25,11 +25,9 @@ class PhotoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
-        imageView.layer.borderColor = UIColor.white.cgColor
-        imageView.layer.borderWidth = 0.5
         quizButton.isEnabled = false
         quizButton.layer.cornerRadius = 10
-        selectImgBtn.layer.cornerRadius = 10
+        
     }
 
     @IBAction func selectPhoto(_ sender: Any) {
@@ -65,8 +63,30 @@ extension PhotoVC: UIImagePickerControllerDelegate, UINavigationControllerDelega
         var storageRef = Storage.storage().reference().child("images/img.png")
         let data = UIImagePNGRepresentation(myImg)
         let metadata = StorageMetadata()
-        metadata.contentType = "image/png"
+        metadata.contentType = "img/png"
         let uploadTask = storageRef.putData(data!, metadata: metadata)
     }
  
+}
+
+extension UIView {
+    func roundCorners(corners:UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
+extension UIButton{
+    func roundedButton(){
+        let size = CGSize(width: 8.0, height: 8.0)
+        let maskPAth1 = UIBezierPath(roundedRect: self.bounds,
+                                     byRoundingCorners: [.bottomLeft , .bottomRight],
+                                     cornerRadii:size)
+        let maskLayer1 = CAShapeLayer()
+        maskLayer1.frame = self.bounds
+        maskLayer1.path = maskPAth1.cgPath
+        self.layer.mask = maskLayer1
+        
+    }
 }

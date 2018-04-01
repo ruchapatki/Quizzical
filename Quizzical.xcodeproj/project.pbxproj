@@ -21,6 +21,8 @@
 		95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F2F206F936A00AACE71 /* QuizVC.swift */; };
 		95B5EB7B2070452F002D1D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */; };
 		95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5EB7E20707A29002D1D00 /* ShortAVC.swift */; };
+		95B5EB812070BFEF002D1D00 /* JsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5EB802070BFEF002D1D00 /* JsonParse.swift */; };
+		95B5EB832070D896002D1D00 /* stuff.json in Resources */ = {isa = PBXBuildFile; fileRef = 95B5EB822070D896002D1D00 /* stuff.json */; };
 		95F747A620702F9F00559D52 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A520702F9E00559D52 /* arrow2.png */; };
 		95F747A820702FE100559D52 /* arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A720702FE100559D52 /* arrow3.png */; };
 		95F747AA2070303800559D52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A92070303700559D52 /* arrow.png */; };
@@ -43,6 +45,8 @@
 		95B46F2F206F936A00AACE71 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95B5EB7E20707A29002D1D00 /* ShortAVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAVC.swift; sourceTree = "<group>"; };
+		95B5EB802070BFEF002D1D00 /* JsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParse.swift; sourceTree = "<group>"; };
+		95B5EB822070D896002D1D00 /* stuff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stuff.json; sourceTree = "<group>"; };
 		95F747A520702F9E00559D52 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		95F747A720702FE100559D52 /* arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow3.png; sourceTree = "<group>"; };
 		95F747A92070303700559D52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				95B46F19206F7BFB00AACE71 /* ViewController.swift */,
 				95B46F1B206F7BFB00AACE71 /* Main.storyboard */,
 				95122AD920702370000FAB60 /* ScoreVC.swift */,
+				95B5EB802070BFEF002D1D00 /* JsonParse.swift */,
 				95B5EB7E20707A29002D1D00 /* ShortAVC.swift */,
 				95B46F2F206F936A00AACE71 /* QuizVC.swift */,
 				95B46F2B206F879100AACE71 /* PhotoVC.swift */,
@@ -105,6 +110,7 @@
 				95F747A720702FE100559D52 /* arrow3.png */,
 				95F747A520702F9E00559D52 /* arrow2.png */,
 				95122AD7207011D2000FAB60 /* arrow1.png */,
+				95B5EB822070D896002D1D00 /* stuff.json */,
 				95B46F1E206F7BFB00AACE71 /* Assets.xcassets */,
 				95B46F20206F7BFB00AACE71 /* LaunchScreen.storyboard */,
 				95B46F23206F7BFB00AACE71 /* Info.plist */,
@@ -185,6 +191,7 @@
 			files = (
 				95B46F22206F7BFB00AACE71 /* LaunchScreen.storyboard in Resources */,
 				95122AD8207011D3000FAB60 /* arrow1.png in Resources */,
+				95B5EB832070D896002D1D00 /* stuff.json in Resources */,
 				95B46F1F206F7BFB00AACE71 /* Assets.xcassets in Resources */,
 				95B46F2A206F7CAA00AACE71 /* teacher.png in Resources */,
 				95F747AA2070303800559D52 /* arrow.png in Resources */,
@@ -206,6 +213,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
@@ -214,6 +222,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
@@ -266,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B46F1A206F7BFB00AACE71 /* ViewController.swift in Sources */,
+				95B5EB812070BFEF002D1D00 /* JsonParse.swift in Sources */,
 				95122ADA20702370000FAB60 /* ScoreVC.swift in Sources */,
 				95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */,
 				95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */,

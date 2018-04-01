@@ -29,7 +29,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ct7-lf-nQS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="507"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="492"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titlePic.png" translatesAutoresizingMaskIntoConstraints="NO" id="HuK-g1-iYI">
@@ -37,14 +37,14 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.55686274509803924" green="0.36470588235294116" blue="0.72549019607843135" alpha="0.842498282967033" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5415403838417816" green="0.39611821920912715" blue="0.67583459718032968" alpha="0.79412087912087914" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ogl-UL-Yg8">
-                                <rect key="frame" x="0.0" y="506" width="375" height="161"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-ao-lvS">
-                                        <rect key="frame" x="108" y="56" width="159" height="50"/>
+                                        <rect key="frame" x="108" y="68" width="159" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                         <state key="normal" title="Get started">
@@ -102,7 +102,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-37-AGs">
-                                        <rect key="frame" x="13" y="169" width="349" height="393"/>
+                                        <rect key="frame" x="13" y="166" width="349" height="393"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.16715315934065939" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -134,7 +134,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AD4-wt-5S0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1001" y="133"/>
+        </scene>
+        <!--Json Parse-->
+        <scene sceneID="Q1U-b9-0ok">
+            <objects>
+                <viewController id="LRE-oo-q86" customClass="JsonParse" customModule="Quizzical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzK-LA-GMX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g3Y-QC-Tqx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDJ-vl-TBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="857"/>
         </scene>
         <!--QuizVC-->
         <scene sceneID="Hb7-a6-RgS">
@@ -156,12 +171,12 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8jU-tZ-1ja">
-                                        <rect key="frame" x="18" y="181" width="341" height="180"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jU-tZ-1ja">
+                                        <rect key="frame" x="18" y="100" width="341" height="261"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqU-KO-HWC">
@@ -234,7 +249,7 @@
                         <outlet property="answer4" destination="yhI-2N-cTR" id="YMB-EJ-QhI"/>
                         <outlet property="arrow" destination="jiX-OR-P5U" id="Ojc-Bk-Zie"/>
                         <outlet property="qNum" destination="GJe-me-DVa" id="Hcf-vL-gQb"/>
-                        <outlet property="question" destination="8jU-tZ-1ja" id="Yh8-iG-UDd"/>
+                        <outlet property="questionBox" destination="8jU-tZ-1ja" id="yxI-Ty-gfD"/>
                         <segue destination="6uh-Re-Bdf" kind="show" identifier="toShort" id="Ey5-06-ehr"/>
                     </connections>
                 </viewController>
@@ -283,7 +298,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="startingOver:" destination="4OH-US-Jhf" eventType="touchUpInside" id="4yo-vL-yDK"/>
+                                                    <action selector="startingOver:" destination="4OH-US-Jhf" eventType="touchUpInside" id="GcR-fa-j2x"/>
                                                     <segue destination="WRA-AE-pGe" kind="show" id="ZKC-wW-t9t"/>
                                                 </connections>
                                             </button>
@@ -334,12 +349,12 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-De-08H">
-                                        <rect key="frame" x="18" y="177" width="341" height="150"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-De-08H">
+                                        <rect key="frame" x="18" y="100" width="341" height="227"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fYl-Ke-61w">
@@ -378,7 +393,7 @@
                     <connections>
                         <outlet property="answerField" destination="fYl-Ke-61w" id="XSu-QN-dFx"/>
                         <outlet property="qNum" destination="TFd-cK-6Rz" id="lXG-y3-JQM"/>
-                        <outlet property="question" destination="Vhm-De-08H" id="ORT-83-wb8"/>
+                        <outlet property="questionBox" destination="Vhm-De-08H" id="PDR-tY-Fkb"/>
                         <outlet property="submitAns" destination="H33-PC-OLt" id="Uhv-9d-7Wb"/>
                         <segue destination="4OH-US-Jhf" kind="show" identifier="toScore" id="go9-DM-6UP"/>
                     </connections>
@@ -386,6 +401,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0c-Qh-ly1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2600.8000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--QuizVC-->
+        <scene sceneID="9g5-e4-cPg">
+            <objects>
+                <viewController title="QuizVC" id="9Db-1O-PZf" customClass="QuizVC" customModule="Quizzical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gCK-w3-Xjw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFV-bB-GJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxI-dD-hzy">
+                                        <rect key="frame" x="18" y="52" width="341" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16933748130000001" green="0.12777435779999999" blue="0.19390711190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L4s-u5-zzM">
+                                        <rect key="frame" x="18" y="100" width="341" height="261"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-dD-amH">
+                                        <rect key="frame" x="18" y="369" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16862745100000001" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerClicked:" destination="9Db-1O-PZf" eventType="touchUpInside" id="ujq-Uu-pm7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kt5-0b-Wr2">
+                                        <rect key="frame" x="18" y="432" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16933748130000001" green="0.12777435779999999" blue="0.19390711190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerClicked:" destination="9Db-1O-PZf" eventType="touchUpInside" id="Dwv-em-pxg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuh-ZR-ckj">
+                                        <rect key="frame" x="18" y="495" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16933748130000001" green="0.12777435779999999" blue="0.19390711190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerClicked:" destination="9Db-1O-PZf" eventType="touchUpInside" id="BHA-XQ-KZD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-og-zbB">
+                                        <rect key="frame" x="18" y="557" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.16933748130000001" green="0.12777435779999999" blue="0.19390711190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerClicked:" destination="9Db-1O-PZf" eventType="touchUpInside" id="M7Z-sf-0ER"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOe-rL-dfY">
+                                        <rect key="frame" x="325" y="627" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="arrow.png"/>
+                                        <connections>
+                                            <action selector="arrowClicked:" destination="9Db-1O-PZf" eventType="touchUpInside" id="lW4-8V-LN3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31921347979999998" green="0.1998825669" blue="0.44502812619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bAD-us-bRs"/>
+                    </view>
+                    <connections>
+                        <outlet property="answer1" destination="TRt-dD-amH" id="KAP-Hy-Iph"/>
+                        <outlet property="answer2" destination="kt5-0b-Wr2" id="5S9-G7-JPC"/>
+                        <outlet property="answer3" destination="Tuh-ZR-ckj" id="B6U-cK-gEC"/>
+                        <outlet property="answer4" destination="Qou-og-zbB" id="yIJ-YN-nBj"/>
+                        <outlet property="arrow" destination="bOe-rL-dfY" id="JX0-5l-gef"/>
+                        <outlet property="qNum" destination="CxI-dD-hzy" id="cTc-5A-DuS"/>
+                        <outlet property="questionBox" destination="L4s-u5-zzM" id="bYe-zb-mFY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GfL-50-sX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824.8" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>

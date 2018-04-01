@@ -10,5 +10,6 @@ pod 'OpalImagePicker', '~> 1.7.1'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'Alamofire', '~> 4.5'
 
 end
