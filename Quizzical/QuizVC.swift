@@ -11,6 +11,7 @@ import QuartzCore
 
 var score = 0;
 var total = 0;
+var questionIndex = 0;
 
 class QuizVC: UIViewController {
     
@@ -26,13 +27,12 @@ class QuizVC: UIViewController {
     
 
     
-    var questions = ["The 16th president of the United States was _____", "2 + 2 = ____"]
+    var questions = ["The 16th president of the United States was _____", "2 + 2 = ____", "What was the importance of Washington?", "What is the best flavor of ice cream?"]
     var answers = [["Alexander Hamilton", "Abraham Lincoln", "James Madison", "Thomas Jefferson"],["4","1","Window","21"]]
     var correct = [2,1];
     
     
     var correctTag = 0;
-    var questionIndex = 0;
     
     
 
@@ -42,6 +42,7 @@ class QuizVC: UIViewController {
         
         qNum.layer.masksToBounds = true
         qNum.layer.cornerRadius = 20
+        question.isEditable = false
         
         answer1.layer.masksToBounds = true
         answer2.layer.masksToBounds = true
@@ -55,8 +56,11 @@ class QuizVC: UIViewController {
         arrow.isHidden = true
         arrow.isEnabled = false
         
-        total = questions.count;
-        
+        score = 0;
+        total = 0;
+        questionIndex = 0;
+        total = correct.count;
+
         updateQuestion(questions: questions, answers: answers, correct: correct[questionIndex])
         
     }
@@ -127,12 +131,13 @@ class QuizVC: UIViewController {
     
     
     @IBAction func arrowClicked(_ sender: Any) {
-        if(questionIndex != questions.count-1){
+        if(questionIndex < questions.count-3){
             questionIndex+=1
             updateQuestion(questions: questions, answers: answers, correct: correct[questionIndex])
         }
         else{
-            performSegue(withIdentifier: "toScore", sender: nil)
+            questionIndex+=1
+            performSegue(withIdentifier: "toShort", sender: nil)
         }
     }
     
@@ -140,16 +145,3 @@ class QuizVC: UIViewController {
     
     
 }
-
-//extension UITextView {
-//
-//    func centerVertically() {
-//        let fittingSize = CGSize(width: bounds.width, height: CGFloat.greatestFiniteMagnitude)
-//        let size = sizeThatFits(fittingSize)
-//        let topOffset = (bounds.size.height - size.height * zoomScale) / 2
-//        let positiveTopOffset = max(1, topOffset)
-//        contentOffset.y = -positiveTopOffset
-//    }
-//
-//}
-

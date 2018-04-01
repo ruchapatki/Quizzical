@@ -7,8 +7,7 @@
 //
 
 import UIKit
-//import Firebase
-//import FirebaseDatabase
+import Firebase
 
 
 
@@ -17,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-//        FirebaseApp.configure()
-//        var ref: DatabaseReference!
-//        ref = Database.database().reference()
+        FirebaseApp.configure()
+        
+        let storageRef = Storage.storage().reference()
 
         return true
     }

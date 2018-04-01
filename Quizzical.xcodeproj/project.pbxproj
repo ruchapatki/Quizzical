@@ -19,11 +19,11 @@
 		95B46F2C206F879100AACE71 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F2B206F879100AACE71 /* PhotoVC.swift */; };
 		95B46F2E206F8ED700AACE71 /* titlePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F2D206F8ED700AACE71 /* titlePic.png */; };
 		95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F2F206F936A00AACE71 /* QuizVC.swift */; };
-		95B46F32206FDA6500AACE71 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F31206FDA6500AACE71 /* PhotosVC.swift */; };
+		95B5EB7B2070452F002D1D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */; };
+		95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5EB7E20707A29002D1D00 /* ShortAVC.swift */; };
 		95F747A620702F9F00559D52 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A520702F9E00559D52 /* arrow2.png */; };
 		95F747A820702FE100559D52 /* arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A720702FE100559D52 /* arrow3.png */; };
 		95F747AA2070303800559D52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A92070303700559D52 /* arrow.png */; };
-		95F747AC207033C700559D52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F747AB207033C700559D52 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +41,11 @@
 		95B46F2B206F879100AACE71 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		95B46F2D206F8ED700AACE71 /* titlePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlePic.png; sourceTree = "<group>"; };
 		95B46F2F206F936A00AACE71 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
-		95B46F31206FDA6500AACE71 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95B5EB7E20707A29002D1D00 /* ShortAVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAVC.swift; sourceTree = "<group>"; };
 		95F747A520702F9E00559D52 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
 		95F747A720702FE100559D52 /* arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow3.png; sourceTree = "<group>"; };
 		95F747A92070303700559D52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		95F747AB207033C700559D52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9AA51A0118B2068D85A93613 /* Pods-Quizzical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzical.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical.release.xcconfig"; sourceTree = "<group>"; };
 		AE299096ED34DB96E6D1DF28 /* Pods-Quizzical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzical.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,9 +96,9 @@
 				95B46F19206F7BFB00AACE71 /* ViewController.swift */,
 				95B46F1B206F7BFB00AACE71 /* Main.storyboard */,
 				95122AD920702370000FAB60 /* ScoreVC.swift */,
+				95B5EB7E20707A29002D1D00 /* ShortAVC.swift */,
 				95B46F2F206F936A00AACE71 /* QuizVC.swift */,
 				95B46F2B206F879100AACE71 /* PhotoVC.swift */,
-				95B46F31206FDA6500AACE71 /* PhotosVC.swift */,
 				95B46F29206F7CAA00AACE71 /* teacher.png */,
 				95B46F2D206F8ED700AACE71 /* titlePic.png */,
 				95F747A92070303700559D52 /* arrow.png */,
@@ -108,7 +108,7 @@
 				95B46F1E206F7BFB00AACE71 /* Assets.xcassets */,
 				95B46F20206F7BFB00AACE71 /* LaunchScreen.storyboard */,
 				95B46F23206F7BFB00AACE71 /* Info.plist */,
-				95F747AB207033C700559D52 /* GoogleService-Info.plist */,
+				95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */,
 			);
 			path = Quizzical;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 				95F747AA2070303800559D52 /* arrow.png in Resources */,
 				95B46F1D206F7BFB00AACE71 /* Main.storyboard in Resources */,
 				95F747A620702F9F00559D52 /* arrow2.png in Resources */,
-				95F747AC207033C700559D52 /* GoogleService-Info.plist in Resources */,
+				95B5EB7B2070452F002D1D00 /* GoogleService-Info.plist in Resources */,
 				95B46F2E206F8ED700AACE71 /* titlePic.png in Resources */,
 				95F747A820702FE100559D52 /* arrow3.png in Resources */,
 			);
@@ -206,6 +206,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -213,6 +214,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -265,10 +267,10 @@
 			files = (
 				95B46F1A206F7BFB00AACE71 /* ViewController.swift in Sources */,
 				95122ADA20702370000FAB60 /* ScoreVC.swift in Sources */,
+				95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */,
 				95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */,
 				95B46F18206F7BFB00AACE71 /* AppDelegate.swift in Sources */,
 				95B46F2C206F879100AACE71 /* PhotoVC.swift in Sources */,
-				95B46F32206FDA6500AACE71 /* PhotosVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

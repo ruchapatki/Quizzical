@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD901FCDEC5B45854DF7FB9147EC3050"
+               BlueprintIdentifier = "E1D8CBD79317FCDBD00F0902F261A8F4"
                BuildableName = "Pods_Quizzical.framework"
                BlueprintName = "Pods-Quizzical"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CD901FCDEC5B45854DF7FB9147EC3050"
+            BlueprintIdentifier = "E1D8CBD79317FCDBD00F0902F261A8F4"
             BuildableName = "Pods_Quizzical.framework"
             BlueprintName = "Pods-Quizzical"
             ReferencedContainer = "container:Pods.xcodeproj">
