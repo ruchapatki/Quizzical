@@ -17,7 +17,7 @@ class ShortAVC: UIViewController {
     
     
     var questions = ["The 16th president of the United States was _____", "2 + 2 = ____", "What is the importance of Washington?", "What is the best flavor of ice cream?"]
-    var answers = [["Alexander Hamilton", "Abraham Lincoln", "James Madison", "Thomas Jefferson"],["4","1","Window","21"]]
+    var answers = [["Alexander Hamilton", "Abraham Lincoln", "George Washington", "Thomas Jefferson"],["4","1","Window","21"]]
     var correct = [2,1];
     
     override func viewDidLoad() {
