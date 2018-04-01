@@ -38,11 +38,6 @@ class QuizVC: UIViewController {
     @IBOutlet weak var answer4: UIButton!
 
 
-//    var questions = ["The 16th president of the United States was _____", "2 + 2 = ____", "What was the importance of Washington?", "What is the best flavor of ice cream?"]
-//    var answers = [["Alexander Hamilton", "Abraham Lincoln", "James Madison", "Thomas Jefferson"],["4","1","Window","21"]]
-//    var correct = [2,1];
-
-
     var correctTag = 0;
 
     override func viewDidLoad() {
@@ -68,15 +63,16 @@ class QuizVC: UIViewController {
         total = 0;
         questionIndex = 0;
 
-        parseJSON()
+        parseJSON(completion:{
+            DispatchQueue.main.async(execute:{
+                self.updateQuestion(questions: question, answers: answers, correct: correct)
+                print(question)
+                total = question.count; //NOTE
+            });
+            
+        })
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print(question)
-        total = question.count; //TEMPORARY, REMEMBER TO CHANGE
-        updateQuestion(questions: question, answers: answers, correct: correct)
-    }
 
     func updateQuestion(questions: [String], answers: [[String]], correct: [String]){
         let myColor = UIColor(red: 43/255, green: 33/255, blue: 49/255, alpha: 1)
@@ -177,18 +173,7 @@ class QuizVC: UIViewController {
         }
     }
 
-    func parseJSON(){
-//        let jsonUrlString = "https://quizzical-199802.appspot.com/"
-//        let url = URL(string:jsonUrlString)
-//        Alamofire.request(url!).responseString(completionHandler: {
-//            (request: NSURLRequest, response: HTTPURLResponse?, responseBody: String?, error: NSError?) -> Void in
-//
-//            // Convert the response to NSData to handle with SwiftyJSON
-//            if let data = (responseBody as NSString).dataUsingEncoding(NSUTF8StringEncoding) {
-//                let json = JSON(data: data)
-//                println(json)
-//            }
-//        })
+    func parseJSON(completion: @escaping () ->()){
         
         let jsonUrlString = "https://quizzical-199802.appspot.com/"
         let url = URL(string:jsonUrlString)
@@ -219,6 +204,7 @@ class QuizVC: UIViewController {
             } catch {
                 print("Error", error)
             }
+            completion()
         }
         myData.resume()
         
