@@ -101,7 +101,7 @@
                                             <segue destination="Li2-gW-5xZ" kind="show" id="VdN-Cm-1V2"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-37-AGs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIF-37-AGs">
                                         <rect key="frame" x="13" y="166" width="349" height="393"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.16715315934065939" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

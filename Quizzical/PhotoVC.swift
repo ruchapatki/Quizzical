@@ -60,10 +60,10 @@ extension PhotoVC: UIImagePickerControllerDelegate, UINavigationControllerDelega
     }
     
     func storageWrite(){
-        var storageRef = Storage.storage().reference().child("images/img.png")
+        var storageRef = Storage.storage().reference().child("images/image.png")
         let data = UIImagePNGRepresentation(myImg)
         let metadata = StorageMetadata()
-        metadata.contentType = "img/png"
+        metadata.contentType = "image/png"
         let uploadTask = storageRef.putData(data!, metadata: metadata)
     }
  

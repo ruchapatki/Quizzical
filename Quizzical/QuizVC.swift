@@ -67,7 +67,7 @@ class QuizVC: UIViewController {
             DispatchQueue.main.async(execute:{
                 self.updateQuestion(questions: question, answers: answers, correct: correct)
                 print(question)
-                total = question.count; //NOTE
+                total = 6; //NOTE
             });
             
         })
@@ -163,7 +163,7 @@ class QuizVC: UIViewController {
 
 
     @IBAction func arrowClicked(_ sender: Any) {
-        if(questionIndex < 10){ //TEMPORARY, CHANGE FOR SHORT ANSWER TOO
+        if(questionIndex < 5){ //NOTE
             questionIndex+=1
             updateQuestion(questions: question, answers: answers, correct: correct)
         }
@@ -208,7 +208,7 @@ class QuizVC: UIViewController {
         }
         myData.resume()
         
-
+//local
 //        let path = Bundle.main.path(forResource: "stuff", ofType: "json")
 //        let url = URL(fileURLWithPath: path!)
 //
